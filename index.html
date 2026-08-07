@@ -3,47 +3,161 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>关于麻酱330五七的个人网站</title>
+    <title>关于麻酱330五七的个人网页</title>
     <style>
       body {
         margin: 0;
-        .hxek {
-          height: 50px
-          width:100px
-          margin:20px
+        height: 100vh;
+        background-color: #eee;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .yinYing {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .baiSe {
+        background-color: #fff;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .shuJu {
+        height: 100px;
+      }
+      .lieBiaoXiang {
+        height: 160px;
+      }
+      .daoHang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(201, 201, 201);
+        font-size: 14px;
+        color: #666;
+      }
+      .neiRong::-webkit-scrollbar {
+        display: none;
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neiRong {
+          flex-direction: column;
+        }
+        .shuJuQu {
+          flex-direction: column;
+        }
+        .youQu {
+          margin-left: 8px;
+        }
+        .shuJu {
+          margin: 0 0 8px;
+          flex: auto;
+        }
       }
     </style>
   </head>
-  <body>
-    <div style="
-      background-image:url('gradient2.png');
-      text-align: center;
-      padding: 40px;
-    ">
-      <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEYnBNqc1H9NYIQm-Qy3FV_SUTd_f8RuwAC0TYAAniTmFeujDxIRrsuyT0E.png" alt="BQACAgUAAyEGAASHRsPbAAEYnBNqc1H9NYIQm-Qy3FV_SUTd_f8RuwAC0TYAAniTmFeujDxIRrsuyT0E.png" alt="MC" width="80px" height="80px">
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div
+      style="width: 200px; z-index: 3"
+      class="ceBian flex column baiSe yinYing"
+    >
+    <div>👇此人不知为何物</div>
+      <!-- 侧边头像栏 -->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img
+          alt="logo"
+          src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEYnBNqc1H9NYIQm-Qy3FV_SUTd_f8RuwAC0TYAAniTmFeujDxIRrsuyT0E.png"
+          width="40px"
+          height="40px"
+        />
+        <div style="margin-left: 10px">麻酱330五七</div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <div class="daoHang">我qwq</div>
+        <div class="daoHang">不awa</div>
+        <div class="daoHang">知QAQ</div>
+        <div class="daoHang">这._.</div>
+        <div class="daoHang">该WAW</div>
+        <div class="daoHang">写>W<</div>
+        <div class="daoHang">什/._.\</div>
+        <div class="daoHang">么← →</div>
+        </div>
+      </div>
     </div>
-    <div>
-      <p class="hxek">自己的网站想写啥就写啥</p>
-      <p class="hxek">暑假后半段有点无聊-_-</p>  
-      <p class="hxek">我的世界还是太好玩辣，电脑暴打手机太有趣辣。</p>  
-      <p class="hxek">吃丹还是枯燥，一般玩几下就累，除非我乐意玩，跟朋友一起那就不至于了。</p>  
-      <p class="hxek">:) | :( |._.|qwp|QAQ|qwq| </p>  
-      <p>还愣干啥去看看bilibili吧</p>  
-    </div>
-    <div style="
-      text-align: center;
-      padding: 40px;
-      font-size: 12px
-    ">
-    <p>我的网站,关于自己的版权还没想好咋弄。先点击去bili看看视频吧awa</p>
-    <a href="https://www.bilibili.com">bilibili链接</a>
-    <div style="
-      max-width:
+    <!-- 主区域 -->
+    <div class="flex flex1 column">
+      <!-- 头部栏 -->
+      <div style="height: 60px; z-index: 2" class="baiSe yinYing"></div>
+      <!-- 内容区 -->
+      <div class="flex flex1 neiRong" style="overflow: auto">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 列表区 -->
+          <div class="flex column">
+            <!-- 列表项 -->
+            <div class="lieBiaoXiang mgt8 baiSe yinYing">还愣着干什么去看看bilibili吧👉👉👉
+              <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.8cMTI-oD2gK1BP3zz13ATAHaE1?w=251&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3" width="80px" height="80px">
+              <a href="https://www.bilibili.com/">bilibilil链接</a>
+            </div>
+            <div class="lieBiaoXiang mgt8 baiSe yinYing">
+              <p>告诉你个冷知识:first 地球是⚪的不是平面的</p>
+              <p>告诉你个热知识:second 的英文是第2个
+              <p>怎么样以上知识是不是很管用虽然少了点但没关系以后会有更多的！ 
+            </div>
+            <div class="lieBiaoXiang mgt8 baiSe yinYing">
+              <p>看累了？听听音乐吧~</p>
+              <a href="https://www.bilibili.com/video/BV1Kx4y1U7tt/?">In the Shadow of the Sun</a>
+              <p></p>
+              <a href="https://www.bilibili.com/video/BV1j8K5e3EbG/?">Light</a>
+              <p></p>
+              <a href="https://www.bilibili.com/video/BV1K8gTzGEeK/?">365里路</a>
+            </div>
+            <div class="lieBiaoXiang mgt8 baiSe yinYing">
+              <p>作者的实时状态汇报</p>
+              <p>又来继续写这个**网站了已经深夜了好困啊啊啊</p>
+            </div>
+            <div class="lieBiaoXiang mgt8 baiSe yinYing">
+              <p>最后一栏就给这个网站做个介绍吧~</p>
+              <p>此网站由麻酱330五七制作并对手机端做了适配以保证各端的美观性</p>
+              <p>好了就是这么潦草简单得结束了~~~(唔，终于改完了，但第2页还没改气死我力)</p>
+            </div>
+            <div style="
+               max-width:
       background-color: #f1f1;
       text-align: center;
       padding: 40px;
       font-size: 12px
-      ">
-    <a href="https://majian33057.github.io/majiang33057-of-2/">前往第2页</a>
+            ">
+              <a href="https://majian33057.github.io/majiang33057-of-2/">前往第2页
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
+  </body>
 </html>
